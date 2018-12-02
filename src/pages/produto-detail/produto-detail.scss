@@ -1,0 +1,18 @@
+page-produto-detail {
+    .background {
+        //background-image: url('../assets/background10.png');
+        margin: auto;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10vw;
+        text-align: center;
+        color: white;
+    }
+
+    .toolbar[transparent] .toolbar-background {
+        background-color: rgb(0, 39, 56);
+    }
+}

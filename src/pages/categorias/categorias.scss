@@ -1,0 +1,116 @@
+page-categorias {
+
+    .background {
+        //background-image: url('../assets/background11.png');
+        background-color: rgb(165, 165, 165);
+        margin: auto;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10vw;
+        text-align: center;
+        color: white;
+    }
+
+    .item {
+        width: 350px;
+        
+        margin-bottom: 10px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+        color: #fff;
+        
+        .text-input, {
+            color: #fff;
+        }
+
+        input::-moz-placeholder{
+            color: #fff!important;
+        }
+        input:-moz-placeholder {
+            color: #fff!important;
+        }
+        *:-moz-placeholder{
+            color: #fff!important;
+        }
+        *:-ms-input-placeholder{
+            color: #fff!important;
+        }
+        *::-webkit-input-placeholder{
+            color: #fff!important;
+        }
+        
+    }
+
+    .btn {
+        background: rgb(255, 211, 20);
+        
+    }
+
+    .toolbar[transparent] .toolbar-background {
+        border-color: transparent;
+        background-color: rgb(0, 39, 56);
+    }
+
+    
+
+    .card-background-page {
+        //background-image: url('../assets/background11.png');
+        ion-card {
+          
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 10px;
+          position: relative;
+          text-align: center;
+          border-radius: 10px;
+          //border: 1px solid rgb(160, 160, 160);
+          
+
+        }
+      
+        .card-title {
+          position: absolute;
+          bottom: 5%;
+          font-size: 2.0em;
+          width: 100%;
+          font-weight: bold;
+          color: rgb(252, 248, 248);
+        }
+      
+        .card-subtitle {
+          font-size: 1.0em;
+          position: absolute;
+          top: 52%;
+          width: 100%;
+          color: #fff;
+        }
+      
+      }
+
+      background.content.content-md {
+        background-color: yellow;
+      }
+    
+      
+    .element.style {
+        background-color: rgb(0, 39, 56);
+    }
+
+    .label-md {
+        color: blue;
+    }
+
+    .fixed-content {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        display: block;
+        background-color: aliceblue;
+    }
+}

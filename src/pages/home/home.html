@@ -1,0 +1,23 @@
+<ion-content padding class="background">
+  <h3>Veste bem</h3>
+
+  <img src="assets/imgs/shopping4.png" alt="logo">
+
+  <form>
+    <ion-item>
+      <ion-input [(ngModel)]="creds.email" name="email" type="text" placeholder="Email"></ion-input>
+    </ion-item>
+    <ion-item>
+     
+      <ion-input [(ngModel)]="creds.senha" name="senha" type="password" placeholder="Senha"></ion-input>
+    </ion-item>
+    <button class="btn-entrar" ion-button block round (click)="login()">Entrar</button>
+  </form>
+
+  <span>ou</span>
+ 
+  <button ion-button block outline round (click)="signupGoogle()" class="btn-google">Login com o google</button>
+
+  <button ion-button block outline round (click)="signup()" class="btn-registrar">Registrar</button>
+  <button ion-button block outline round (click)="recuperarSenhaPage()" class="btn-recuperar">Recuperar senha</button>
+</ion-content>
