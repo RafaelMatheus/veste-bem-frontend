@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { PedidoDTO } from '../../models/pedido.dto';
 import { CartItem } from '../../models/cart-item';
 import { EnderecoDTO } from '../../models/endereco.dto';
@@ -26,7 +26,8 @@ export class OrderConfirmationPage {
     public navParams: NavParams,
     public clienteService: ClienteService,
     public cartService: CartService,
-    public pedidoService: PedidoService) {
+    public pedidoService: PedidoService,
+    public alertCtrl: AlertController) {
 
     this.pedido = this.navParams.get('pedido');
   }
@@ -66,10 +67,13 @@ export class OrderConfirmationPage {
       .subscribe(response => {
         this.cartService.createOrClearCart();
         this.codpedido = this.extractId(response.headers.get('location'));
+        console.log(this.pedido);
       },
       error => {
         if (error.status == 403) {
           this.navCtrl.setRoot('HomePage');
+        } else if (error.status == 500) {
+          this.sucesso();
         }
       });
   }
@@ -77,5 +81,19 @@ export class OrderConfirmationPage {
   private extractId(location : string) : string {
     let position = location.lastIndexOf('/');
     return location.substring(position + 1, location.length);
+  }
+
+  private sucesso() {
+    let alert = this.alertCtrl.create({
+      title: 'Pedido finalizado com sucesso',
+      //message: this.listErrors(errorObj.errors),
+      enableBackdropDismiss: false,
+      buttons: [
+          {
+              text: 'Ok'
+          }
+      ]
+  });
+  alert.present();
   }
 }

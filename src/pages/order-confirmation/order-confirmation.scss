@@ -1,3 +1,27 @@
 page-order-confirmation {
+    .fixed-content {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        display: block;
+        background-color: aliceblue;
+    }
 
+    .toolbar-background-md {
+        background: rgb(0, 39, 56);
+    }
+
+    .toolbar-title-md {
+        padding: 0 12px;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+        color: #fff;
+        background-color: transparent;
+    }
 }

@@ -38,14 +38,23 @@ export class AuthService {
             });
     }
 
+   
+    teste(authorizationValue: string){
+        let tok = authorizationValue.substring(10)
+        let teste = this.jwtHelper.decodeToken(tok)
+        console.log(tok);
+        console.log("Teste");
+        console.log(teste);
+    }
     successfulLogin(authorizationValue : string) {
         let tok = authorizationValue.substring(7);
         let user : LocalUser = {
             token: tok,
-            email: this.jwtHelper.decodeToken(tok).sub
+            email: this.jwtHelper.decodeToken(tok).sub        
         };
         this.storage.setLocalUser(user);
         this.cartService.createOrClearCart();
+        this.teste(authorizationValue);
     }
 
     logout() {

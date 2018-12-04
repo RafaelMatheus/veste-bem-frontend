@@ -10,7 +10,7 @@ import { AuthService } from '../services/auth.service';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: string = 'HomePage';
+  rootPage: string = 'CategoriasPage';
 
   pages: Array<{title: string, component: string}>;
 

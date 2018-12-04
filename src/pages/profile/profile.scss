@@ -4,4 +4,15 @@ page-profile {
         border-radius: 100%;
         margin: 25px auto 0 auto;
     }
+
+   
+    .toolbar[transparent] .toolbar-background {
+        border-color: transparent;
+        background: rgb(0, 39, 56);
+    }
+
+    .content-md {
+        color: #000;
+        background-color: aliceblue;
+    }
 }

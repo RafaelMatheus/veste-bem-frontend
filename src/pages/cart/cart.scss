@@ -7,4 +7,14 @@ page-cart {
     .element.style {
         background-color: rgb(0, 39, 56);
     }
+
+    .toolbar[transparent] .toolbar-background {
+        background-color: rgb(0, 39, 56);
+    }
+
+    .content-md {
+        color: #000;
+        background-color: aliceblue;
+    }
+
 }

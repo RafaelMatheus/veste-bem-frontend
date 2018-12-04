@@ -40,7 +40,7 @@ export class ErrorInterceptor implements HttpInterceptor {
                 break;
 
                 default:
-                this.handleDefaultEror(errorObj);
+                //this.handleDefaultEror(errorObj);
             }
 
             return Observable.throw(errorObj);

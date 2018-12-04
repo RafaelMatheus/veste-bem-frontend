@@ -12,7 +12,7 @@ import { AuthService } from '../../services/auth.service';
 export class HomePage {
 
   creds : CredenciaisDTO = {
-    email: "",
+    userName: "",
     senha: ""
   };
 
