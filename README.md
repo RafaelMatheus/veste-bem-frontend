@@ -2,13 +2,18 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-Como executar?
+#### Como executar?
 
 ```sh
-$  Git clone https://github.com/RafaelMatheus/veste-bem-frontend.git
+$ Git clone https://github.com/RafaelMatheus/veste-bem-frontend.git
 $ Npm install
 $ Ionic Serve
 ```
+
+
+
+
+
 
 
 #### Sobre o projeto
